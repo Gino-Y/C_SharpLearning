@@ -1,12 +1,14 @@
-﻿using System;
+﻿using CSharpLearning.Lessons;
 
-namespace Lesson02
+namespace CSharpLearning
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // 想运行哪节课,就调用哪节课的 Run()。改这一行即可。
+            Lesson02.Run();
+            Lesson11.Run();
         }
     }
 }

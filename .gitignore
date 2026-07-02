@@ -1,0 +1,11 @@
+# 编译产物
+bin/
+obj/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+
+# 其它
+*.suo
