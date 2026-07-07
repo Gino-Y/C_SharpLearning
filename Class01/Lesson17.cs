@@ -1,4 +1,4 @@
-﻿namespace CSharpLearning.Lessons;
+﻿namespace CSharpLearning.Class01;
 
 public class Lesson17
 {
