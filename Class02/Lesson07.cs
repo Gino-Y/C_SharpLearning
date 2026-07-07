@@ -10,6 +10,7 @@ public class Lesson07
         // zang.Color = "black";
         // Console.WriteLine($"{zang.name} color: {zang.Color}");
 
+        // 里氏转换原则
         Animal mimi = new Cat();
         mimi.name = "Mimi";
         mimi.Eat();
@@ -32,7 +33,7 @@ public class Cat : Animal
 
     public override void Sleep()
     {
-        Console.WriteLine("huhuhu~");
+        Console.WriteLine($"{name} sleep: huhuhu~");
     }
 }
 
@@ -45,7 +46,7 @@ public class Camel : Animal
 
     public override void Sleep()
     {
-        Console.WriteLine("hahaha~");
+        Console.WriteLine($"{name} sleep: hahaha~");
     }
 }
 
@@ -59,7 +60,7 @@ public abstract class Animal
         Console.WriteLine($"{name} is eating.");
     }
 
-    // 抽象方法 父类中不能实现 子类中必须实现
+    // 抽象方法 必须在抽象类中声明 父类中不能实现 子类中必须实现
     public abstract void Sleep();
 
     public virtual void Walk()
