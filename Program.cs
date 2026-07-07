@@ -1,4 +1,5 @@
 ﻿using CSharpLearning.Class01;
+using CSharpLearning.Class02;
 
 namespace CSharpLearning
 {
@@ -14,6 +15,9 @@ namespace CSharpLearning
             // Lesson14.Run();
             // Lesson15.Run();
             Lesson16.Run();
+            
+            CSharpLearning.Class01.Lesson01.Run();
+            CSharpLearning.Class02.Lesson01.Run();
         }
     }
 }
