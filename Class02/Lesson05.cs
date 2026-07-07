@@ -26,6 +26,16 @@ public class Dog : Animal
 {
     public int Age { get; set; }
     public static int num { get; set; }
+
+    public override void Walk()
+    {
+        base.Walk();
+    }
+
+    public override void Sleep()
+    {
+        throw new NotImplementedException();
+    }
 }
 
 class NumTool
