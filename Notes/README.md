@@ -36,6 +36,7 @@
 - [Stack&lt;T&gt; 栈](./Class02-面向对象/Stack栈.md)
 - [Queue&lt;T&gt; 队列](./Class02-面向对象/Queue队列.md)
 - [LinkedList&lt;T&gt; 链表](./Class02-面向对象/LinkedList链表.md)
+- [Dictionary&lt;K,V&gt; 字典](./Class02-面向对象/Dictionary字典.md)
 - [集合总览](./Class02-面向对象/集合总览.md)
 
 ## 如何运行某节课

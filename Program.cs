@@ -14,7 +14,8 @@ namespace CSharpLearning
             // Lesson13.Run();
             // Lesson14.Run();
             // Lesson15.Run();
-            Lesson16.Run();
+            // Lesson16 在 Class01/Class02 都有,同名类要写全名区分
+            CSharpLearning.Class02.Lesson16.Run();
             
             
             CSharpLearning.Class01.Lesson01.Run();
