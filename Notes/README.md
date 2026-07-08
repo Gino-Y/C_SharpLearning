@@ -33,6 +33,10 @@
 - [接口 interface](./Class02-面向对象/接口.md)
 - [泛型 Generics](./Class02-面向对象/泛型.md)
 - [List&lt;T&gt; 泛型集合](./Class02-面向对象/List泛型集合.md)
+- [Stack&lt;T&gt; 栈](./Class02-面向对象/Stack栈.md)
+- [Queue&lt;T&gt; 队列](./Class02-面向对象/Queue队列.md)
+- [LinkedList&lt;T&gt; 链表](./Class02-面向对象/LinkedList链表.md)
+- [集合总览](./Class02-面向对象/集合总览.md)
 
 ## 如何运行某节课
 
