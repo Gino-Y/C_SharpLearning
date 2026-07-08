@@ -29,6 +29,7 @@
 - **Lesson05** — `static` 静态成员与工具方法
 - **Lesson06** — 值类型 vs 引用类型、栈与堆、传参
 - **Lesson07 / 07b** — 继承、`virtual`/`override`/`abstract`、多态、里氏转换
+- **IHotChair** — 接口 `interface`（一个类可实现多个接口，附加统一能力）
 
 ## 如何运行某节课
 

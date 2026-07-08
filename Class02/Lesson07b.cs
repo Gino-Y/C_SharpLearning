@@ -14,19 +14,26 @@ public class Lesson07b
         Auto auto = new Auto();
         BeginCar(audi);
         BeginCar(auto);
+        
+        audi.HotChair();
     }
 }
 
-class Audi : CarA
+class Audi : CarA, IHotChair
 {
     public override void Begin()
     {
-        Console.WriteLine("按钮启动");
+        Console.WriteLine($"{nameof(Audi)}按钮启动");
     }
 
     public override void ChangeGear()
     {
-        Console.WriteLine("自动换挡");
+        Console.WriteLine($"{nameof(Audi)}自动换挡");
+    }
+
+    public void HotChair()
+    {
+        Console.WriteLine($"{nameof(Audi)}有座椅加热");
     }
 }
 
@@ -34,12 +41,12 @@ class Auto : CarA
 {
     public override void Begin()
     {
-        Console.WriteLine("钥匙启动");
+        Console.WriteLine($"{nameof(Auto)}钥匙启动");
     }
 
     public override void ChangeGear()
     {
-        Console.WriteLine("手动换挡");
+        Console.WriteLine($"{nameof(Auto)}手动换挡");
     }
 }
 
