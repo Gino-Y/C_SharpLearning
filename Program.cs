@@ -16,8 +16,10 @@ namespace CSharpLearning
             // Lesson15.Run();
             Lesson16.Run();
             
+            
             CSharpLearning.Class01.Lesson01.Run();
             CSharpLearning.Class02.Lesson01.Run();
+            CSharpLearning.Class02.Lesson07b.Run();
         }
     }
 }
