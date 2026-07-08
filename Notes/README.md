@@ -39,6 +39,7 @@
 - [Dictionary&lt;K,V&gt; 字典](./Class02-面向对象/Dictionary字典.md)
 - [集合总览](./Class02-面向对象/集合总览.md)
 - [struct 结构体](./Class02-面向对象/结构体.md)
+- [enum 枚举](./Class02-面向对象/枚举.md)
 
 ## 如何运行某节课
 
