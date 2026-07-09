@@ -5,11 +5,15 @@ public class Lesson19_Practice
     public static void Run()
     {
         // 练习：委托。：智能家居遥控器
-        RemoteControl remoteControl = new RemoteControl();
+        
         Light light = new Light();
         AirConditioner airConditioner = new AirConditioner();
         Speaker speaker = new Speaker();
 
+        // 创建遥控器
+        RemoteControl remoteControl = new RemoteControl();
+
+        // 按下回家按钮
         Console.WriteLine("-----------按下回家按钮");
         remoteControl.PressButton();
         Console.WriteLine("-----------注册委托事件");
@@ -37,7 +41,7 @@ class RemoteControl
     // 被注册的方法，执行时会调用委托事件
     public void PressButton()
     {
-        Console.WriteLine("按下回家按钮");
+        Console.WriteLine(">>按下回家按钮<<");
         // 调用被注册的方法
         OnGoHome?.Invoke();
     }
