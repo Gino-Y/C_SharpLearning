@@ -1,10 +1,11 @@
-﻿namespace CSharpLearning.Class02;
+namespace CSharpLearning.Class02_Practice1a;
 
-public class Lesson19_Practice
+public class Lesson19_Practice1a
 {
     public static void Run()
     {
-        // 练习：委托。：智能家居遥控器
+        // 练习：委托：智能家居遥控器
+        // 生、定、被、调、创、注
         
         Light light = new Light();
         AirConditioner airConditioner = new AirConditioner();
@@ -13,19 +14,11 @@ public class Lesson19_Practice
         // 创建遥控器
         RemoteControl remoteControl = new RemoteControl();
 
-        // 按下回家按钮
-        Console.WriteLine("-----------按下回家按钮");
-        remoteControl.PressButton();
-        Console.WriteLine("-----------注册委托事件");
         // 注册委托事件
         remoteControl.OnGoHome += light.TurnOn;
-        remoteControl.OnGoHome += airConditioner.Start;
+        remoteControl.OnGoHome += airConditioner.StartCool;
         remoteControl.OnGoHome += speaker.PlayMusic;
-        remoteControl.PressButton();
 
-        // 注销委托事件
-        Console.WriteLine("-----------注销委托事件");
-        remoteControl.OnGoHome -= airConditioner.Start;
         remoteControl.PressButton();
     }
 }
@@ -57,7 +50,7 @@ class Light
 
 class AirConditioner
 {
-    public void Start()
+    public void StartCool()
     {
         Console.WriteLine("空调制冷 26 度");
     }
