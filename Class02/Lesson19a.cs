@@ -4,6 +4,7 @@ public class Lesson19
 {
     public static void Run()
     {
+        // 非委托版本实现
         // 循环创建 101~111 共 11 间教室
         List<ClassRoom> classRooms = new List<ClassRoom>();
         for (int i = 101; i <= 111; i++)
