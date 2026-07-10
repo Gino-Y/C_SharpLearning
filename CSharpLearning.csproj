@@ -11,4 +11,9 @@
     <Folder Include="Notes\" />
   </ItemGroup>
 
+  <!-- Example 下是独立小程序源码(用 csc 单独编译),不参与本项目构建 -->
+  <ItemGroup>
+    <Compile Remove="Example\**" />
+  </ItemGroup>
+
 </Project>

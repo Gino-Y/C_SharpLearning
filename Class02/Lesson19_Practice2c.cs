@@ -1,45 +1,34 @@
-namespace CSharpLearning.Class02_Practice1b;
+namespace CSharpLearning.Class02_Practice1c;
 
 public class Lesson19_Practice1a
 {
     public static void Run()
     {
-        // 声、定、被、调、创、注
+        // 练习：委托：智能家居遥控器
 
-        Light light = new Light();
-        AirConditioner airConditioner = new AirConditioner();
-        Speaker speaker = new Speaker();
+        light light = new light();
+        airConditioner airConditioner = new airConditioner();
+        speaker speaker = new speaker();
 
-        // 创
         RemoteControl remoteControl = new RemoteControl();
-
-        // 注
         remoteControl.OnGoHome += light.TurnOn;
-        remoteControl.OnGoHome += airConditioner.StartCool;
-        remoteControl.OnGoHome += speaker.PlayMusic;
-
         remoteControl.PressButton();
     }
 }
 
 class RemoteControl
 {
-    // 声
     public delegate void GoHomeHandler();
-
-    // 定
     public GoHomeHandler? OnGoHome;
 
-    // 被
     public void PressButton()
     {
         Console.WriteLine(">>按下回家按钮<<");
-        // 调
         OnGoHome?.Invoke();
     }
 }
 
-class Light
+class light
 {
     public void TurnOn()
     {
@@ -47,7 +36,7 @@ class Light
     }
 }
 
-class AirConditioner
+class airConditioner
 {
     public void StartCool()
     {
@@ -55,10 +44,10 @@ class AirConditioner
     }
 }
 
-class Speaker
+class speaker
 {
     public void PlayMusic()
     {
-        Console.WriteLine("音箱开始放歌");
+        Console.WriteLine("播放音乐");
     }
 }
