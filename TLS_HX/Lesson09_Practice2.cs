@@ -5,7 +5,7 @@ public class Lesson09_Practice2
     public static void Run()
     {
         Player player = new Player("张三", 100, 10, 5);
-        player.SelfKill();
+        player.KillSelf();
         Console.WriteLine(player.hp);
     }
 }
@@ -48,7 +48,7 @@ public class Player
 
 static class Tools
 {
-    public static void SelfKill(this Player source)
+    public static void KillSelf(this Player source)
     {
         source.hp = 0;
     }

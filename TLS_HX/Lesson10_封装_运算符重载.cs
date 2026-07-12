@@ -12,6 +12,11 @@ public class Lesson10
         p2.y = 4;
         Point p3 = p1 + p2;
         Console.WriteLine($"p3.x: {p3.x}, p3.y: {p3.y}");
+
+        Point p4 = 10 + p1;
+        Console.WriteLine($"p4.x: {p4.x}, p4.y: {p4.y}");
+        Point p5 = p1 + 10;
+        Console.WriteLine($"p5.x: {p5.x}, p5.y: {p5.y}");   
     }
 }
 
