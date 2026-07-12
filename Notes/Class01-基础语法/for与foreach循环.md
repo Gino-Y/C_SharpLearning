@@ -1,3 +1,9 @@
+---
+tags:
+  - 类型/知识点
+  - 主题/流程控制
+---
+
 # for / foreach 循环
 
 > 对应 `Class01/Lesson14.cs`

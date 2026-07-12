@@ -1,3 +1,9 @@
+---
+tags:
+  - 类型/知识点
+  - 主题/类与对象
+---
+
 # static 静态成员与静态类
 
 > 对应 `Class02/Lesson05.cs`（小M老师课程）、`TLS_HX/Lesson08_Practice1.cs`（唐老师核心课程·方法练习）

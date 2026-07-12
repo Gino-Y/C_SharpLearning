@@ -1,3 +1,37 @@
+filters:
+  and:
+    - file.hasTag("类型")
+formulas:
+  主题: 'file.tags.filter(value.contains("主题/"))[0]'
+  类型: 'file.tags.filter(value.contains("类型/"))[0]'
+properties:
+  formula.主题:
+    displayName: 主题
+  formula.类型:
+    displayName: 类型
 views:
   - type: table
     name: 表格
+    order:
+      - file.name
+      - formula.类型
+      - formula.主题
+  - type: table
+    name: 按主题
+    filters:
+      and:
+        - '!file.hasTag("类型/索引")'
+    groupBy:
+      property: formula.主题
+      direction: ASC
+    order:
+      - file.name
+      - formula.类型
+  - type: table
+    name: 动手清单
+    filters:
+      and:
+        - 'file.hasTag("类型/练习", "类型/实战")'
+    order:
+      - file.name
+      - formula.主题

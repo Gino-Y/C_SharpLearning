@@ -1,3 +1,9 @@
+---
+tags:
+  - 类型/知识点
+  - 主题/集合
+---
+
 # Dictionary&lt;TKey, TValue&gt; 字典
 
 > 对应 `Class02/Lesson16.cs`。字典 = **键值对集合**，按「键」存取值（≈ Python 的 `dict`）。
