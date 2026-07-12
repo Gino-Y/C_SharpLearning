@@ -2,11 +2,16 @@
 tags:
   - 类型/知识点
   - 主题/流程控制
+对应课件: Class01/Lesson12.cs
+aliases:
+  - switch
 ---
 
 # switch 分支
 
+> [!NOTE]
 > 对应 `Class01/Lesson12.cs`
+> 前置：[变量与条件分支](./变量与条件分支.md) · 相关：[enum 枚举](../Class02-面向对象/枚举.md)（switch 的最佳拍档）
 
 ```csharp
 int a = 9;

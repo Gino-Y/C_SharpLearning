@@ -2,11 +2,17 @@
 tags:
   - 类型/知识点
   - 主题/集合
+对应课件: Class02/Lesson14b.cs
+aliases:
+  - Queue
+  - FIFO
 ---
 
 # Queue&lt;T&gt; 队列
 
+> [!NOTE]
 > 对应 `Class02/Lesson14b.cs`。队列 = **先进先出 FIFO**（像排队，先来的先走）。
+> 前置：[List 泛型集合](./List泛型集合.md) · 相关：[Stack 栈](./Stack栈.md)（取向相反）、[集合总览](./集合总览.md)
 
 ```csharp
 Queue<int> queue = new Queue<int>();

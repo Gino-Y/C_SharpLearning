@@ -1,30 +1,42 @@
 ---
-description: Notes 笔记的标签规范（frontmatter tags 受控词表）
+description: Notes 笔记的标签规范与格式约定（frontmatter、链接、callout）
 globs: Notes/**/*.md
 alwaysApply: false
 ---
 
-# Notes 标签规范
+# Notes 标签与格式规范
 
-`Notes/` 下每篇笔记必须以 frontmatter 开头，标签规则：
+`Notes/` 下每篇笔记必须以 frontmatter 开头，新建笔记参照模板 `Notes/模板/知识点笔记.md`。
+
+## 标签（受控词表，新增前必须先更新 `Notes/README.md` 的「标签规范」小节和本规则）
 
 - 每篇**恰好 1 个** `类型/` 标签；知识点/练习/实战笔记再加**恰好 1 个** `主题/` 标签；索引文件不打主题标签。
-- **禁止**给一篇笔记打多个主题标签（`课程索引.base` 按主题分组依赖此规则，多值列表会破坏 Bases 分组）。
-- **禁止**在正文里写行内 `#标签`，标签只出现在 frontmatter。
-
-## 受控词表（新增标签前必须先更新 `Notes/README.md` 的「标签规范」小节和本规则）
-
+- **禁止**多主题标签（`课程索引.base` 按主题分组依赖此规则）；**禁止**正文行内 `#标签`。
 - 类型（4 个）：`类型/知识点`、`类型/练习`、`类型/实战`、`类型/索引`
 - 主题（11 个）：`主题/语法基础`、`主题/流程控制`、`主题/数组`、`主题/方法`、`主题/类与对象`、`主题/类型系统`、`主题/继承多态`、`主题/泛型`、`主题/集合`、`主题/委托`、`主题/工具链`
 
-## 模板
+## frontmatter 其他属性
+
+- `对应课件:` 课程代码文件相对仓库根的路径（多个用列表），如 `Class02/Lesson19b.cs`
+- `aliases:` 英文/别名列表（如 `delegate`、`Stack`），便于快速切换器中英混搜
+
+## 正文格式
+
+- 开头用 `> [!NOTE]` callout：第一行"对应课件 + 一句话概括"，第二行"前置：[链接] · 相关：[链接]"（markdown 相对路径链接，禁用 wiki 链接，保证 GitHub 可渲染）。
+- 前置/相关链接指向知识依赖的上游笔记，跨文件夹用 `../Class01-基础语法/x.md` 形式。
+- 踩坑用 `> [!WARNING]`、类比/Python 对照用 `> [!TIP]`。callout 标记只用大写 NOTE/WARNING/TIP/IMPORTANT/CAUTION（GitHub 兼容子集），标记行不写自定义标题。
+
+## 模板示例
 
 ```yaml
 ---
 tags:
   - 类型/知识点
   - 主题/集合
+对应课件: Class02/Lesson13.cs
+aliases:
+  - List
 ---
 ```
 
-新建笔记时同步更新 `Notes/README.md` 的「知识点速查」列表。其余笔记格式要求（单篇 ≤60 行等）见 `Notes/README.md`。
+新建笔记时同步更新 `Notes/README.md` 的「知识点速查」列表。其余要求（单篇 ≤60 行等）见 `Notes/README.md`。

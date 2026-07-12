@@ -2,11 +2,17 @@
 tags:
   - 类型/知识点
   - 主题/流程控制
+对应课件: Class01/Lesson14.cs
+aliases:
+  - for
+  - foreach
 ---
 
 # for / foreach 循环
 
+> [!NOTE]
 > 对应 `Class01/Lesson14.cs`
+> 前置：[while / do-while 循环](./while循环.md) · 相关：[一维数组](./一维数组.md)（foreach 最常遍历的对象）
 
 ```csharp
 // for：适合按下标循环

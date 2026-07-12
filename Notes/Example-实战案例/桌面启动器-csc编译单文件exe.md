@@ -2,11 +2,17 @@
 tags:
   - 类型/实战
   - 主题/工具链
+对应课件: Example/Launcher.cs
+aliases:
+  - csc
+  - Launcher
 ---
 
 # 实战：桌面启动器（csc 编译单文件 exe）
 
+> [!NOTE]
 > 对应 `Example/Launcher.cs`。双击桌面的 `C#课程.exe` 自动打开 Chrome 书签页。串起**编译原理、进程启动、模拟按键**三个知识点。
+> 前置：[程序结构与输出](../Class01-基础语法/程序结构与输出.md) · [static 静态成员与静态类](../Class02-面向对象/static静态成员.md)（`Main` 是静态方法）
 
 ## 核心代码
 
@@ -57,9 +63,10 @@ csc.exe /target:winexe /r:System.Windows.Forms.dll /out:"桌面\C#课程.exe" La
 
 ## 踩过的坑
 
-1. `chrome://` 地址命令行打不开 → Chrome 安全限制（https:// 可以）→ 改模拟按键+剪贴板方案
-2. 源码放进课程项目报错 → 自带 `Main` 撞入口 + 缺 WinForms 引用 → `.csproj` 加 `<Compile Remove="Example\**" />` 排除
-3. 提交出去个空文件 → IDE 不实时写盘 → 提交前先 Ctrl+S
+> [!WARNING]
+> 1. `chrome://` 地址命令行打不开 → Chrome 安全限制（https:// 可以）→ 改模拟按键+剪贴板方案
+> 2. 源码放进课程项目报错 → 自带 `Main` 撞入口 + 缺 WinForms 引用 → `.csproj` 加 `<Compile Remove="Example\**" />` 排除
+> 3. 提交出去个空文件 → IDE 不实时写盘 → 提交前先 Ctrl+S
 
 ## 要点
 

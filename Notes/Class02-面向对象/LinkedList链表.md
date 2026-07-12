@@ -2,11 +2,17 @@
 tags:
   - 类型/知识点
   - 主题/集合
+对应课件: Class02/Lesson15.cs
+aliases:
+  - LinkedList
+  - 链表
 ---
 
 # LinkedList&lt;T&gt; 链表
 
+> [!NOTE]
 > 对应 `Class02/Lesson15.cs`。链表 = 节点用**前后指针**串起来，没有下标。
+> 前置：[List 泛型集合](./List泛型集合.md)（对照：连续内存 vs 指针串联）· 相关：[集合总览](./集合总览.md)
 
 ```csharp
 LinkedList<int> list = new LinkedList<int>();

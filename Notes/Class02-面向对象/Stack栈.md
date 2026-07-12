@@ -2,11 +2,17 @@
 tags:
   - 类型/知识点
   - 主题/集合
+对应课件: Class02/Lesson14a.cs
+aliases:
+  - Stack
+  - LIFO
 ---
 
 # Stack&lt;T&gt; 栈
 
+> [!NOTE]
 > 对应 `Class02/Lesson14a.cs`。栈 = **后进先出 LIFO**（像叠盘子，最后放的最先拿）。
+> 前置：[List 泛型集合](./List泛型集合.md) · 相关：[Queue 队列](./Queue队列.md)（取向相反）、[集合总览](./集合总览.md)
 
 ```csharp
 Stack<int> stack = new Stack<int>();

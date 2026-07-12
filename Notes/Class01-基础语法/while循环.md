@@ -2,11 +2,17 @@
 tags:
   - 类型/知识点
   - 主题/流程控制
+对应课件: Class01/Lesson13.cs
+aliases:
+  - while
+  - do-while
 ---
 
 # while / do-while 循环
 
+> [!NOTE]
 > 对应 `Class01/Lesson13.cs`
+> 前置：[变量与条件分支](./变量与条件分支.md) · 相关：[for / foreach 循环](./for与foreach循环.md)
 
 ```csharp
 int num = 6;

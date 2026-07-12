@@ -2,11 +2,16 @@
 tags:
   - 类型/知识点
   - 主题/集合
+对应课件: Class02/Lesson13.cs
+aliases:
+  - List
 ---
 
 # List&lt;T&gt; 泛型集合（列表）
 
+> [!NOTE]
 > 对应 `Class02/Lesson13.cs`。`List<T>` 是可变长的“动态数组”，是最常用的泛型集合。
+> 前置：[泛型](./泛型.md) · [一维数组](../Class01-基础语法/一维数组.md) · 相关：[集合总览](./集合总览.md)
 
 ```csharp
 using System.Collections.Generic;   // List<T> 所在命名空间

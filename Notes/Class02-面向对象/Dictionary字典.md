@@ -2,11 +2,18 @@
 tags:
   - 类型/知识点
   - 主题/集合
+对应课件: Class02/Lesson16.cs
+aliases:
+  - Dictionary
+  - dict
+  - 哈希表
 ---
 
 # Dictionary&lt;TKey, TValue&gt; 字典
 
+> [!NOTE]
 > 对应 `Class02/Lesson16.cs`。字典 = **键值对集合**，按「键」存取值（≈ Python 的 `dict`）。
+> 前置：[泛型](./泛型.md)（TKey/TValue 双类型参数）· [List 泛型集合](./List泛型集合.md) · 相关：[集合总览](./集合总览.md)
 
 ```csharp
 Dictionary<string, int> ages = new Dictionary<string, int>();

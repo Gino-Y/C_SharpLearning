@@ -2,11 +2,19 @@
 tags:
   - 类型/知识点
   - 主题/类与对象
+对应课件:
+  - Class02/Lesson05.cs
+  - TLS_HX/Lesson08_Practice1.cs
+aliases:
+  - static
+  - 静态类
 ---
 
 # static 静态成员与静态类
 
+> [!NOTE]
 > 对应 `Class02/Lesson05.cs`（小M老师课程）、`TLS_HX/Lesson08_Practice1.cs`（唐老师核心课程·方法练习）
+> 前置：[类与对象](./类与对象.md) · 相关：[拓展方法](./拓展方法.md)（静态方法的进阶用法）
 
 ```csharp
 public class Dog
@@ -48,7 +56,8 @@ static class MathTool
 MathTool.GetABS(-10);   // 类名直接点，不用 new
 ```
 
-- 踩坑：绝对值写 `> 0` → 传 0 输出 `-0` → `float` 是 IEEE 754，存在真负零；改 `>=` 即可（`int` 无此问题）。
+> [!WARNING]
+> 踩坑：绝对值写 `> 0` → 传 0 输出 `-0` → `float` 是 IEEE 754，存在真负零；改 `>=` 即可（`int` 无此问题）。
 
 ## 知识链：下一步 → 拓展方法
 
