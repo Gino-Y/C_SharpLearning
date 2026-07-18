@@ -70,6 +70,7 @@ tags:
 - [LinkedList&lt;T&gt; 链表](./Class02-面向对象/LinkedList链表.md)
 - [Dictionary&lt;K,V&gt; 字典](./Class02-面向对象/Dictionary字典.md)
 - [集合总览](./Class02-面向对象/集合总览.md)
+- [内部类与分部类](./Class02-面向对象/内部类与分部类.md)
 - [struct 结构体](./Class02-面向对象/结构体.md)
 - [enum 枚举](./Class02-面向对象/枚举.md)
 - [拓展方法](./Class02-面向对象/拓展方法.md)
