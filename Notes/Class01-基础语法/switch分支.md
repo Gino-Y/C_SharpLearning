@@ -7,7 +7,8 @@ aliases:
   - switch
 ---
 
-# switch 分支
+# switch 分支
+[上一篇：变量与条件分支（if）](./变量与条件分支.md) · [下一篇：while / do-while](./while循环.md)
 
 > [!NOTE]
 > 对应 `Class01/Lesson12.cs`

@@ -7,11 +7,12 @@ aliases:
   - List
 ---
 
-# List&lt;T&gt; 泛型集合（列表）
+# List&lt;T&gt; 泛型集合（列表）
+[下一篇：Stack 栈](./Stack栈.md)
 
 > [!NOTE]
 > 对应 `Class02/Lesson13.cs`。`List<T>` 是可变长的“动态数组”，是最常用的泛型集合。
-> 前置：[泛型](./泛型.md) · [一维数组](../Class01-基础语法/一维数组.md) · 相关：[集合总览](./集合总览.md)
+> 前置：[泛型](./泛型.md) · [一维数组](../Class01-基础语法/一维数组.md) · 相关：[集合总览](./集合总览.md) · 相关枢纽：[集合选型](../枢纽/枢纽_集合选型.md)
 
 ```csharp
 using System.Collections.Generic;   // List<T> 所在命名空间

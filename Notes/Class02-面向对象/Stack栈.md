@@ -8,11 +8,12 @@ aliases:
   - LIFO
 ---
 
-# Stack&lt;T&gt; 栈
+# Stack&lt;T&gt; 栈
+[上一篇：List](./List泛型集合.md) · [下一篇：Queue 队列](./Queue队列.md)
 
 > [!NOTE]
 > 对应 `Class02/Lesson14a.cs`。栈 = **后进先出 LIFO**（像叠盘子，最后放的最先拿）。
-> 前置：[List 泛型集合](./List泛型集合.md) · 相关：[Queue 队列](./Queue队列.md)（取向相反）、[集合总览](./集合总览.md)
+> 前置：[List 泛型集合](./List泛型集合.md) · 相关：[Queue 队列](./Queue队列.md)（取向相反）、[集合总览](./集合总览.md) · 相关枢纽：[集合选型](../枢纽/枢纽_集合选型.md)
 
 ```csharp
 Stack<int> stack = new Stack<int>();

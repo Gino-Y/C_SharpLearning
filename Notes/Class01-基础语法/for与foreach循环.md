@@ -8,7 +8,8 @@ aliases:
   - foreach
 ---
 
-# for / foreach 循环
+# for / foreach 循环
+[上一篇：while / do-while](./while循环.md) · [下一篇：一维数组](./一维数组.md)
 
 > [!NOTE]
 > 对应 `Class01/Lesson14.cs`

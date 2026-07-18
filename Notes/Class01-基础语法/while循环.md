@@ -8,7 +8,8 @@ aliases:
   - do-while
 ---
 
-# while / do-while 循环
+# while / do-while 循环
+[上一篇：switch 分支](./switch分支.md) · [下一篇：for / foreach](./for与foreach循环.md)
 
 > [!NOTE]
 > 对应 `Class01/Lesson13.cs`

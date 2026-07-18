@@ -9,11 +9,12 @@ aliases:
   - 哈希表
 ---
 
-# Dictionary&lt;TKey, TValue&gt; 字典
+# Dictionary&lt;TKey, TValue&gt; 字典
+[上一篇：LinkedList](./LinkedList链表.md) · [下一篇：集合总览](./集合总览.md)
 
 > [!NOTE]
 > 对应 `Class02/Lesson16.cs`。字典 = **键值对集合**，按「键」存取值（≈ Python 的 `dict`）。
-> 前置：[泛型](./泛型.md)（TKey/TValue 双类型参数）· [List 泛型集合](./List泛型集合.md) · 相关：[集合总览](./集合总览.md)
+> 前置：[泛型](./泛型.md)（TKey/TValue 双类型参数）· [List 泛型集合](./List泛型集合.md) · 相关：[集合总览](./集合总览.md) · 相关枢纽：[集合选型](../枢纽/枢纽_集合选型.md)
 
 ```csharp
 Dictionary<string, int> ages = new Dictionary<string, int>();

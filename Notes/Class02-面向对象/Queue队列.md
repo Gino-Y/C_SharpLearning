@@ -8,11 +8,12 @@ aliases:
   - FIFO
 ---
 
-# Queue&lt;T&gt; 队列
+# Queue&lt;T&gt; 队列
+[上一篇：Stack](./Stack栈.md) · [下一篇：LinkedList](./LinkedList链表.md)
 
 > [!NOTE]
 > 对应 `Class02/Lesson14b.cs`。队列 = **先进先出 FIFO**（像排队，先来的先走）。
-> 前置：[List 泛型集合](./List泛型集合.md) · 相关：[Stack 栈](./Stack栈.md)（取向相反）、[集合总览](./集合总览.md)
+> 前置：[List 泛型集合](./List泛型集合.md) · 相关：[Stack 栈](./Stack栈.md)（取向相反）、[集合总览](./集合总览.md) · 相关枢纽：[集合选型](../枢纽/枢纽_集合选型.md)
 
 ```csharp
 Queue<int> queue = new Queue<int>();
